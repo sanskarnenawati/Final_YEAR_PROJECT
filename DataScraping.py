@@ -32,9 +32,3 @@ for year in range(2015, 2021):
         print(date)
         with open('./news/'+date+'.txt', 'w+') as file:
                 file.write(' '.join(news))
-
-
-
-
-
-

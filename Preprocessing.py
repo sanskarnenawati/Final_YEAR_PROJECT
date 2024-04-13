@@ -33,6 +33,7 @@ def sentiment_score(text):
     sentiment = sia.polarity_scores(text)
     return sentiment['compound']
 
+
 dates, news, sentiment_scores = [], [], []
 for filename in file_addresses:
     with open(filename, 'r') as file:
@@ -44,12 +45,12 @@ for filename in file_addresses:
             news.append(line)
             sentiment_scores.append(sentiment_score(line))
 
-data = {'Date': dates, 'news': news, 'sentiment':sentiment_scores}
+data = {'Date': dates, 'news': news, 'sentiment': sentiment_scores}
 df = pandas.DataFrame(data)
 
 df.to_csv('news.csv', index=False)
 
-folder_path = "./shares"  # Replace this with the path to your folder
+folder_path = "./shares"
 file_addresses = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, file))]
 
 dfs = []

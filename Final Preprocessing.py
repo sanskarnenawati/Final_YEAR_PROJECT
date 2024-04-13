@@ -15,5 +15,3 @@ merged_df.dropna(inplace=True)
 merged_df.reset_index(drop=True, inplace=True)
 
 merged_df.to_csv('data.csv', index=False)
-
-print("Merging completed. The merged data is saved as 'merged_news_shares.csv'.")
