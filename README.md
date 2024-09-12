@@ -5,7 +5,7 @@ CraftTrade utilizes advanced neural networks and LSTM models to analyze financia
 
 ## MLOps Workflow
 
-![MLOps Workflow Diagram]([path_to_your_pdf](https://github.com/sanskarnenawati/Final_YEAR_PROJECT/blob/main/sanskar_21070126077_mlosass2.pdf))
+![MLOps Workflow Diagram](https://github.com/sanskarnenawati/Final_YEAR_PROJECT/blob/main/sanskar_21070126077_mlosass2.pdf)
 
 ### Steps:
 
